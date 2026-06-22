@@ -1,0 +1,32 @@
+{
+  "name": "organic-traceability-backend",
+  "version": "1.0.0",
+  "description": "Backend for Organic Traceability System",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "verify": "node -e \"require('./src/events/verifyJob').runVerifyJob().then(console.log)\""
+  },
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.16.0",
+    "express": "^4.22.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^6.0.0",
+    "mongoose": "^8.24.0",
+    "morgan": "^1.10.0",
+    "multer": "^2.1.1",
+    "qrcode": "^1.5.4",
+    "web3": "^4.3.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
